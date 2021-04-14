@@ -19,7 +19,7 @@ namespace API
            var host = CreateHostBuilder(args).Build();
 
            using var scope = host.Services.CreateScope();
-            // po użyciu zmienna scope jest usuwana. ma za zadanie przetrzymywać servis
+            // po uzyciu zmienna scope jest usuwana. ma za zadanie przetrzymywac servis
            var services = scope.ServiceProvider;
 
            try{

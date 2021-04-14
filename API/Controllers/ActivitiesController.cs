@@ -21,7 +21,7 @@ namespace API.Controllers
             return await _context.Activities.ToListAsync();
         }
 
-        [HttpGet("{id}")] // rządanie z parametrem . tu activity/id
+        [HttpGet("{id}")] // odp na zadanie z parametrem . tu activity/id odpowiedz
         public async Task<ActionResult<Activity>> GetActivity(Guid id){
             return await _context.Activities.FindAsync(id);
         }
